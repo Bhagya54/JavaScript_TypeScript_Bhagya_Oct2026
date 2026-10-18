@@ -1,0 +1,16 @@
+node_modules/
+dist/
+build/
+coverage/
+
+.env
+.env.*
+
+*.log
+npm-debug.log*
+
+.commandcode/
+
+.DS_Store
+Thumbs.db
+desktop.ini
