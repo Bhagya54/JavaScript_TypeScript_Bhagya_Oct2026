@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3 Ways to Make a Function</title>
+<style>
+  :root { --bg:#fffaf0; --fg:#222; --card:#fff; --line:#e6dcc8; --a:#ff7043; --b:#42a5f5; --c:#66bb6a; --code:#f3ecdc; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#1c1b1a; --fg:#f2eee6; --card:#262523; --line:#3d3a35; --code:#33302b; }
+  }
+  body { margin:0; padding:16px; background:var(--bg); color:var(--fg); font:18px/1.4 system-ui, sans-serif; }
+  main { max-width:900px; margin:0 auto; }
+  h1 { text-align:center; font-size:2rem; }
+  .sub { text-align:center; opacity:.75; margin-top:-8px; }
+  .story { background:var(--card); border:2px dashed var(--line); border-radius:16px; padding:12px 16px; margin:16px 0; }
+  .wrap { overflow-x:auto; }
+  table { width:100%; border-collapse:separate; border-spacing:0; background:var(--card); border:2px solid var(--line); border-radius:16px; overflow:hidden; min-width:640px; }
+  th, td { padding:12px; text-align:center; border-bottom:1px solid var(--line); vertical-align:middle; }
+  tr:last-child td { border-bottom:0; }
+  th.q, td.q { text-align:left; font-weight:700; width:22%; }
+  thead th { font-size:1.1rem; color:#fff; }
+  thead th:nth-child(2) { background:var(--a); }
+  thead th:nth-child(3) { background:var(--b); }
+  thead th:nth-child(4) { background:var(--c); }
+  thead th .big { display:block; font-size:2.2rem; }
+  .big { font-size:1.8rem; display:block; }
+  small { opacity:.75; }
+  code { background:var(--code); padding:2px 6px; border-radius:6px; font-size:.85em; }
+  pre { background:var(--code); padding:10px; border-radius:10px; overflow-x:auto; text-align:left; font-size:.8rem; margin:6px 0 0; }
+  .ex { display:grid; gap:12px; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); margin-top:16px; }
+  .ex div { background:var(--card); border:2px solid var(--line); border-radius:16px; padding:10px 14px; }
+  .ex h3 { margin:4px 0; }
+  .tip { text-align:center; font-size:1.1rem; margin-top:20px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>🛠️ 3 Ways to Make a Function</h1>
+  <p class="sub">A function is a <b>little robot</b> 🤖 you teach once, then call any time.</p>
+
+  <div class="story">
+    🎯 Our robot: <b>"Is this status code OK?"</b><br>
+    <small>200–299 = ✅ fine. Anything else = ❌ stay quiet.</small>
+  </div>
+
+  <div class="wrap">
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th><span class="big">📜</span>Normal Function<br><small>(declaration)</small></th>
+        <th><span class="big">📦</span>Function Expression</th>
+        <th><span class="big">➡️</span>Arrow Function</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="q">✍️ How to write</td>
+        <td><code>function f(x) {}</code></td>
+        <td><code>const f = function(x) {}</code></td>
+        <td><code>const f = (x) =&gt; {}</code></td>
+      </tr>
+      <tr>
+        <td class="q">🎁 Stored in a box (variable)?</td>
+        <td><span class="big">🙅</span>No, has its own name</td>
+        <td><span class="big">🙆</span>Yes</td>
+        <td><span class="big">🙆</span>Yes</td>
+      </tr>
+      <tr>
+        <td class="q">⏰ Call it <i>before</i> writing it?<br><small>(hoisting)</small></td>
+        <td><span class="big">✅</span>Yes! Line 2 of our file does this</td>
+        <td><span class="big">❌</span>Error!<br><small>box still empty</small></td>
+        <td><span class="big">❌</span>Error!<br><small>box still empty</small></td>
+      </tr>
+      <tr>
+        <td class="q">📏 How short?</td>
+        <td><span class="big">🐘</span>Longest</td>
+        <td><span class="big">🐘</span>Long</td>
+        <td><span class="big">🐜</span>Shortest<br><small><code>x =&gt; x * 2</code></small></td>
+      </tr>
+      <tr>
+        <td class="q">👆 Own <code>this</code>?<br><small>("who called me?")</small></td>
+        <td><span class="big">🙆</span>Yes</td>
+        <td><span class="big">🙆</span>Yes</td>
+        <td><span class="big">🙅</span>No, borrows from outside</td>
+      </tr>
+      <tr>
+        <td class="q">🏗️ Can use <code>new</code>?</td>
+        <td><span class="big">✅</span>Yes</td>
+        <td><span class="big">✅</span>Yes</td>
+        <td><span class="big">❌</span>No</td>
+      </tr>
+      <tr>
+        <td class="q">🎒 Has <code>arguments</code>?</td>
+        <td><span class="big">✅</span>Yes</td>
+        <td><span class="big">✅</span>Yes</td>
+        <td><span class="big">❌</span>No<br><small>use <code>...args</code></small></td>
+      </tr>
+      <tr>
+        <td class="q">🧑‍🏫 Best for</td>
+        <td>Main helpers you use anywhere</td>
+        <td>Passing around like a value</td>
+        <td>Quick little callbacks</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="ex">
+    <div>
+      <h3>📜 Normal</h3>
+      <pre>validateStatusCode(203); // works!
+function validateStatusCode(status) {
+  if (status &gt;= 200 &amp;&amp; status &lt; 300) {
+    console.log("Request is fine:", status)
+  }
+}</pre>
+    </div>
+    <div>
+      <h3>📦 Expression</h3>
+      <pre>const validateStatusCode_Exp =
+  function (status) {
+    if (status &gt;= 200 &amp;&amp; status &lt; 300) {
+      console.log("Request is fine:", status)
+    }
+  }
+validateStatusCode_Exp(205);</pre>
+    </div>
+    <div>
+      <h3>➡️ Arrow</h3>
+      <pre>const validateStatusCode_Arrow =
+  (status) =&gt; {
+    if (status &gt;= 200 &amp;&amp; status &lt; 300) {
+      console.log("Request is fine:", status)
+    }
+  }
+validateStatusCode_Arrow(201)</pre>
+    </div>
+  </div>
+
+  <p class="tip">🧠 All three did the <b>same job</b> in our file. Difference = <b>when you can call them</b> and <b>how <code>this</code> behaves</b>.</p>
+</main>
+</body>
+</html>

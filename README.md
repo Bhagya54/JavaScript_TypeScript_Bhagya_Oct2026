@@ -26,7 +26,7 @@ node chapter_10_Arrays/91_Checking_Array.js
 | `chapter_08_switch_statement` | `switch`, `break`, `default`, grouping cases, interview questions |
 | `chapter_09_Loops` | `for`, `while`, `do-while`, retry patterns, interview questions |
 | `chapter_10_Arrays` | Creating, accessing, modifying, searching, iterating, transforming, sorting, slicing, checking arrays |
-| `chapter_11_Functions` | Functions (coming soon) |
+| `chapter_11_Functions` | Declarations, expressions, arrow functions, IIFE, default/rest/spread parameters, scope, closures, higher-order functions |
 
 ## Chapter 10 — Arrays
 
@@ -46,6 +46,35 @@ node chapter_10_Arrays/91_Checking_Array.js
 | `89_Arry_SpliceVsSlice.js` | `splice()` vs `slice()` side by side |
 | `90_Array_Concat.js` | Concatenating arrays |
 | `91_Checking_Array.js` | `Array.isArray()`, `every()`, `some()` — with a Playwright-style API status check example |
+
+## Chapter 11 — Functions
+
+| File | What it covers |
+| --- | --- |
+| `92_Functions.js` | Defining and calling a function |
+| `93_Type1_Fn_NoReturnTypeNoArguments.js` | No return value, no parameters |
+| `94_Type2_Fn_NoReturnTypeWithParameters.js` | No return value, with parameters |
+| `95_Type3_Fn_WithReturnTypeNoParameters.js` | Return value, no parameters |
+| `96_Type4_Fn_WithReturnTypeWithParameters.js` | Return value, with parameters |
+| `97_TemplateLiteral.js` | Template literals inside functions |
+| `98_Function_Expression.js` | Function expressions vs declarations |
+| `99_Arrow_Function.js` | Arrow function basics |
+| `100_Arrow_Function_MultiLine.js` | Multi-line arrow functions |
+| `101_Arrow_Fn_Real.js` | Declaration vs expression vs arrow with a status-code check |
+| `Function_Types_ELI5.html` | ELI5 comparison table of the three function styles |
+| `102_IIFE.js` | Immediately Invoked Function Expressions |
+| `103_Default_Parameters_Fn.js` | Default parameters |
+| `104_IQ.js` | Interview question: function with parameters and return |
+| `105_Rest_Parameters_Fn.js` | Rest parameters (`...args`) |
+| `106_Spread_Arguments_Fn.js` | Spread arguments |
+| `107_IQ.js` | Interview question: status code classifier |
+| `108_Spread_Fn_IQ.js` | Interview question: spread into a function call |
+| `109_Scope_Fn_IQ.js` | Global vs local scope |
+| `110_IQ.js` | Nested scope interview question |
+| `111_Closure.js` | Closures |
+| `112_Closure.js` | Closure counter with `increment` / `decrement` / `get` |
+| `113_Real_Ex_Closure.js` | Real-world closure: retry tracker |
+| `114_Higher-Order Function.js` | Higher-order functions (passing a function as an argument) |
 
 ## Notes
 
