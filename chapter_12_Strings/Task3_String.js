@@ -5,7 +5,7 @@
 // - Prefix the result with "js-basic-".
 
 //+ means - Match one or more consecutive non-alphanumeric characters as a single match.
-//This regex removes hyphens at the beginning or end of the string.
+// .replace(/^-+|-+$/g, "")- This regex removes hyphens at the beginning or end of the string.
 function normalizeJsBasicsLabel(label) {
     const normalized = label
         .trim()
