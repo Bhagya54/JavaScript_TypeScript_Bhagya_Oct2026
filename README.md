@@ -29,6 +29,7 @@ node chapter_10_Arrays/91_Checking_Array.js
 | `chapter_11_Functions` | Declarations, expressions, arrow functions, IIFE, default/rest/spread parameters, scope, closures, higher-order functions |
 | `chapter_12_Strings` | String basics, properties, searching, substrings, transforming, conversion, palindrome/anagram/slug/identifier/keyword tasks |
 | `chapter_13_Objects` | Creating objects, copy by reference, equality, JSON vs JS object, property descriptors, methods, destructuring, spread, `Object.keys/values/entries`, `let` vs `const` |
+| `chapter_14_2D_Array` | 2D arrays/matrices, nested loops, row/diagonal sums, triangle and pyramid patterns |
 
 ## Chapter 10 — Arrays
 
@@ -115,6 +116,19 @@ node chapter_10_Arrays/91_Checking_Array.js
 | `133_Objects_Real.js` | Real-world test config with env variables (`dotenv`) |
 | `133_Objects_Real_Explanation.md` | Explanation of the `parseInt(process.env.X \|\| '3', 10)` pattern |
 | `134_Object_Let_Const.js` | Objects with `let` vs `const`: mutation vs reassignment |
+
+## Chapter 14 — 2D Arrays
+
+| File | What it covers |
+| --- | --- |
+| `135_2D_Array.js` | 1D vs 2D array; iterating a grid with nested loops |
+| `136_IQ.js` | Interview question: matrix size, rows/cols, grid access |
+| `137_Real_Ex.js` | Real-world test-result matrix: counts, pass/fail, status codes |
+| `138_2DArray.js` | Row sums with `map`/`reduce`; left and right diagonal sums |
+| `139_IQ_TrianglePattern.js` | Star triangle and number triangle patterns |
+| `140_IQ_ReverseTrianglePattern.js` | Reverse (inverted) star triangle |
+| `141_IQ_PyramidPattern.js` | Star pyramid pattern |
+| `testdata.csv` | Sample login test data (username, password, expected result) |
 
 ## Notes
 
