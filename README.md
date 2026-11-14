@@ -30,6 +30,7 @@ node chapter_10_Arrays/91_Checking_Array.js
 | `chapter_12_Strings` | String basics, properties, searching, substrings, transforming, conversion, palindrome/anagram/slug/identifier/keyword tasks |
 | `chapter_13_Objects` | Creating objects, copy by reference, equality, JSON vs JS object, property descriptors, methods, destructuring, spread, `Object.keys/values/entries`, `let` vs `const` |
 | `chapter_14_2D_Array` | 2D arrays/matrices, nested loops, row/diagonal sums, triangle and pyramid patterns |
+| `chapter_15_CallBack` | Callback functions, sync vs async callbacks, `setTimeout`, callback hell, callbacks with parameters and return values |
 
 ## Chapter 10 — Arrays
 
@@ -129,6 +130,21 @@ node chapter_10_Arrays/91_Checking_Array.js
 | `140_IQ_ReverseTrianglePattern.js` | Reverse (inverted) star triangle |
 | `141_IQ_PyramidPattern.js` | Star pyramid pattern |
 | `testdata.csv` | Sample login test data (username, password, expected result) |
+
+## Chapter 15 — Callbacks
+
+| File | What it covers |
+| --- | --- |
+| `142_CallBack.js` | Callback basics: named, anonymous and arrow function callbacks |
+| `143_Playwright_CB.js` | How Playwright's `test(title, fn)` uses a callback |
+| `144_CallBack_Ex2.js` | Café order example: passing data into the callback |
+| `145_Synchronous_CB.js` | Synchronous callback with `forEach` |
+| `146_Asynchronous_CBFn.js` | Asynchronous callback with `setTimeout` |
+| `147_Asynchronous_CB.js` | Multiple async callbacks and execution order |
+| `148_CallBack_Hell.js` | Callback hell: dependent login steps (browser, login page, credentials) |
+| `149_CB_Hell.js` | Pyramid of Doom: 22 nested async steps |
+| `150_CallBack_WithParameters.js` | Callbacks with parameters; sync callback with `forEach` |
+| `151_CallBack_ReturnType.js` | Callback that returns a value (`calculate(a, b, operation)`) |
 
 ## Notes
 
