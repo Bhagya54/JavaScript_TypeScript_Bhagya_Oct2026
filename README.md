@@ -31,6 +31,7 @@ node chapter_10_Arrays/91_Checking_Array.js
 | `chapter_13_Objects` | Creating objects, copy by reference, equality, JSON vs JS object, property descriptors, methods, destructuring, spread, `Object.keys/values/entries`, `let` vs `const` |
 | `chapter_14_2D_Array` | 2D arrays/matrices, nested loops, row/diagonal sums, triangle and pyramid patterns |
 | `chapter_15_CallBack` | Callback functions, sync vs async callbacks, `setTimeout`, callback hell, callbacks with parameters and return values |
+| `chapter_16_Promises` | Promise creation, resolve/reject, `then/catch/finally`, escaping callback hell, `Promise.all` vs `allSettled`, interview questions |
 
 ## Chapter 10 — Arrays
 
@@ -145,6 +146,19 @@ node chapter_10_Arrays/91_Checking_Array.js
 | `149_CB_Hell.js` | Pyramid of Doom: 22 nested async steps |
 | `150_CallBack_WithParameters.js` | Callbacks with parameters; sync callback with `forEach` |
 | `151_CallBack_ReturnType.js` | Callback that returns a value (`calculate(a, b, operation)`) |
+
+## Chapter 16 — Promises
+
+| File | What it covers |
+| --- | --- |
+| `152_Promise.js` | Promise basics: `resolve`, `reject`, `then`, `catch` |
+| `153_ApiRealExample_Resolve.js` | API response example: resolved promise |
+| `154_ApiRealExample_Reject.js` | API response example: rejected promise (`500 Error`) |
+| `155_Finally.js` | `finally()` — runs on success and failure |
+| `156_Promise_Resolves_CallbackHell.js` | Promise chaining to flatten callback hell |
+| `157_Promise_All.js` | `Promise.all` health-check example |
+| `158_Promise_IQ.js` | Promise interview questions |
+| `Promise_all_allSettled.md` | Notes: `Promise.all` vs `Promise.allSettled` |
 
 ## Notes
 
